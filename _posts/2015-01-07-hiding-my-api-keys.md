@@ -3,9 +3,9 @@ layout: post
 title: "Hiding my API keys"
 ---
 
-<strong>Problem:</strong> I don't want to expose API secret keys, but I still want to be able to commit my changes and push to github.
+### Problem: I don't want to expose API secret keys, but I still want to be able to commit my changes and push to github.
 
-<strong>Solution:</strong>
+### Solution:
 <ul>
 	<li>Install <a href="https://github.com/laserlemon/figaro">figaro</a> gem</li>
 	<li>set environment variables in config/application.yml

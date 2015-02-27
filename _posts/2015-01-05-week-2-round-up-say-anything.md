@@ -30,7 +30,7 @@ What I wasn't able to finish this time around:
 	<li><a href="http://guides.rubyonrails.org/association_basics.html">has\_many / belongs\_to</a> association -- I've dealt with this before, but this was my first time working with them outside of a tutorial, so it sunk in more</li>
 	<li>The <a href="http://guides.rubyonrails.org/asset_pipeline.html">asset pipeline</a> -- had to figure some assets out and so I read a little bit about this, but I need to read way more when I have time</li>
 </ul>
-<strong>Unsolved problems:</strong>
+### Unsolved problems:
 
 When testing, I had to run some tests as a signed in user and some as signed out. How do I do this? After some reading, I figured out that I had to stub the authentication in the specs. I followed <a href="https://github.com/plataformatec/devise/wiki/How-To:-Stub-authentication-in-controller-specs">these directions</a> and put the ControllerHelpers module in spec/support/controller\_helpers.rb as well as the accompanying config. But it kept complaining: "undefined method sign\_in".
 
@@ -67,6 +67,6 @@ y.each { block } # error, no each method on User
 
 There are many other smaller things I could blog about, but I don't have time and you probably don't have patience. I may write up a few of these smaller issues later if I feel like it.
 
-<strong>Next Week</strong>
+### Next Week
 
 Any ideas? I'm thinking about writing an app that would involve pulling from some API... maybe the Twitter API and doing something with the data. Stay tuned.
