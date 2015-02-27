@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "self or no self"
+tags:
+- instance methods
+- methods
+- private methods
+- public methods
+- ruby
+- self
 ---
 
 

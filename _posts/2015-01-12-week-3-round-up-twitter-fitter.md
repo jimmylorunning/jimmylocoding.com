@@ -1,6 +1,15 @@
 ---
 layout: post
 title: "Week 3 Round Up: Twitter Fitter&#8212;the tweet generator!"
+tags:
+- twitter
+- APIs
+- apps
+- gems
+- Markov chains
+- POROs
+- SaaS
+- testing
 ---
 
 So there's still a lot more work I want to do on my week 3 app <a href="https://secret-brushlands-4139.herokuapp.com/">Twitter Fitter</a>. But the general idea is there--it's a <a href="http://en.wikipedia.org/wiki/Markov_chain">Markov generator</a>. You type in a twitter handle, and it spits back a generated tweet (or tweet-like string) that is in the style of that user. (Try @DATABASE\_HULK, @StephenAtHome, @BarackObama, or @kimkardashian) Part of the app/week project is that I want to learn something new each time. So what did I learn this week?

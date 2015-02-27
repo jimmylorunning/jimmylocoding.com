@@ -1,6 +1,15 @@
 ---
 layout: post
 title: "Hiding my API keys"
+tags:
+- APIs
+- env
+- figaro
+- gems
+- github
+- rails
+- yml
+- security
 ---
 
 ### Problem: I don't want to expose API secret keys, but I still want to be able to commit my changes and push to github.

@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Blogging in the New Year
+tags:
+- goals
+- blogging
+- learning
+- resources
 ---
 
 

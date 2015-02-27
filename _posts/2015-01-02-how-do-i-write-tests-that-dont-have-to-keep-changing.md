@@ -1,6 +1,10 @@
 ---
 layout: post
 title: How do I write tests that I don’t have to keep changing?
+tags:
+- testing
+- tdd
+- rspec
 ---
 
 Sometimes I want to check to make sure my controller is sending a message to my model. For example, I want to make sure it's asking the model to return a set of results. But I don't care what message it sends:
