@@ -9,3 +9,20 @@
 	padding: 0.1rem 0.3rem;
 	border: 1px solid #cccccc;
 }
+
+.social-media {
+	margin-top: 2em;
+}
+
+.social-media a {
+	color: #DDDDDD;
+}
+
+.social-media a:hover {
+	color: #FFFFFF;
+}
+
+.social-media .sidebar-nav-item {
+	display: inline-block;
+	margin-right: 0.7em;
+}
