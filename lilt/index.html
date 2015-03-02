@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<a href="https://github.com/jimmylorunning/lilt.js"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+<header>
+  <div class="lilt" data-horizontal-offset="20px" data-blur-radius="0px" data-spread-radius="0px" data-subtleness="12"><h1>lilt</h1></div>
+</header>
+<div class="full-frame section1">
+  <div class="lilt box1" data-shadow-color="#FFBE40" data-horizontal-offset="-50px" data-blur-radius="0px" data-spread-radius="0px" data-subtleness="10">
+    a jQuery plugin for adding 3D shadows that move as you scroll!<br />
+    <div class="download"><a href="lilt.zip" class="button">Download Lilt v0.1</a></div>
+  </div>
+</div>
+<div class="full-frame section2">
+  <div class="lilt box2" data-subtleness="10" data-blur-radius="50px" data-spread-radius="0px" data-horizontal-offset="-35px" data-shadow-color="#222">
+    <h2>Installation</h2>
+    <p><a href="lilt.zip">Download Lilt</a> and add it to the bottom of your file:
+<pre>&lt;script&nbsp;src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&nbsp;src="/path/to/lilt.js"&gt;&lt;/script&gt;</pre></p>
+    <p>Start Lilt on document load:
+    <pre>
+&lt;script&gt;
+$(&nbsp;document&nbsp;).ready(function()&nbsp;{&nbsp;$().lilt();&nbsp;});
+&lt;/script&gt;
+    </pre>
+  </div>
+</div>
+<div class="full-frame section3">
+  <div class="lilt box3" data-subtleness="5" data-blur-radius="40px" data-spread-radius="0px" data-horizontal-offset="20px" data-shadow-color="#999">
+    <h2>Usage</h2>
+    <p>Give any element the "lilt" class and you'll automatically get moving shadows on that element:
+      <pre>
+&lt;div&nbsp;class="lilt"&gt;
+  Hello World
+&lt;/div&gt;
+      </pre>
+Adjust the look and feel of your shadows using data attributes:
+<pre>
+&lt;div&nbsp;class="lilt"
+&nbsp;data-horizontal-offset="-20px"
+&nbsp;data-blur-radius="40px"
+&nbsp;data-spread-radius="0px"
+&nbsp;data-shadow-color="#999"
+&nbsp;data-subtleness="10"&gt;
+  Hello World
+&lt;/div&gt;
+</pre>
+Data attributes correspond to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow">box-shadow properties for CSS</a>. The "data-subtleness" property is a property that controls how subtle the movement will be. The higher the number, the higher the subtlety.</p>
+  </div>
+</div>
+<div class="full-frame section4">
+  <div class="image-note">
+    It works<br />on images too!
+  </div>
+  <img src="images/puddle_sm.jpg" class="lilt box4" alt="works on images too!" data-shadow-color="#333333">
+</div>
+<div class="full-frame section5">
+  <div class="lilt box5" data-subtleness="10" data-blur-radius="50px" data-spread-radius="0px" data-horizontal-offset="-35px" data-shadow-color="#222">
+    <h2>Defaults</h2>
+    <p>
+    Default attributes of lilt shadows are as follows (remember to add 'data-' in front of the name if setting them through data attributes):
+    <table>
+      <tr>
+        <th>Attribute Name</th>
+        <th>Default</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>horizontal-offset</td>
+        <td>-20px</td>
+        <td>horizontal offset of shadow</td>
+      </tr>
+      <tr>
+        <td>blur-radius</td>
+        <td>40px</td>
+        <td>blur radius of shadow</td>
+      </tr>
+      <tr>
+        <td>spread-radius</td>
+        <td>0px</td>
+        <td>positive values increase the size of the shadow, negative values decrease the size</td>
+      </tr>
+      <tr>
+        <td>shadow-color</td>
+        <td>#999999</td>
+        <td>color of the shadow</td>
+      </tr>
+      <tr>
+        <td>subtleness</td>
+        <td>7</td>
+        <td>subtlety of movement; the higher the number the less it will move.</td>
+      </tr>
+    </table>
+    You may change the defaults on any page by calling lilt with your new default options:
+<pre>
+&lt;script&gt;
+$(&nbsp;document&nbsp;).ready(function()&nbsp;{&nbsp;$().lilt({
+&nbsp;&nbsp;'shadow-color': 'red',
+&nbsp;&nbsp;'horizontal-offset': '15px'
+});&nbsp;});
+&lt;/script&gt;
+</pre>
+Data attributes will always take precedence over defaults.
+    </p>
+  </div>
+</div>
+<footer>
+  <div class="lilt" data-horizontal-offset="60px" data-blur-radius="0px" data-spread-radius="-25px" data-subtleness="2"><h2>Thanks,</h2>
+    <p>If you use it, let me know! I'd love to see it in 'the wild'.
+    And pull requests are always welcome.</p>
+    <a href="http://jimmylocoding.com">Jimmy Lo</a><br />
+    <a href="http://twitter.com/jimmylocoding">@jimmylocoding</a>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../lilt/lilt.min.js"></script>
+<script>
+$( document ).ready(function() {
+  $().lilt({'shadow-color': '#000000'});
+});
+</script>
+</body>

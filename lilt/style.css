@@ -1,0 +1,190 @@
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+html {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+body {
+  background-color: #ECF081;
+  font-family: 'Titillium Web', Verdana, Arial, sans-serif;
+}
+
+.full-frame {
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  background-color: #FFF;
+  border-color: #CCC;
+}
+
+.button:hover {
+  background-color: #DDD;
+  border-color: #999;
+}
+
+.download {
+  margin: 10px;
+  text-align: center;
+}
+
+header .lilt, footer .lilt {
+  width: 1px;
+  display: table;
+  padding: 0px;
+  height: 1px;
+  margin: 200px auto;
+}
+
+footer .lilt {
+  width: 250px;
+  padding: 35px;
+  border: 3px solid #FFF;
+  margin-bottom: 550px;
+}
+
+footer a {
+  color: #333;
+}
+
+h1 {
+  margin: 0.3em 0.5em;
+  font-size: 10em;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.section1 {
+  background: url("images/upfeathers.png") #FFF repeat fixed;
+  background-color: #ffffff;
+  padding: 75px 0px;
+  height: 230px;
+}
+
+.section2 {
+  background: #323232;
+  padding: 100px 0px;
+}
+
+.section3 {
+  background: url("images/tree_bark.png") repeat fixed;
+  padding: 100px 0px;
+  height: 500px;
+}
+
+.section4 {
+  background: url("images/purty_wood.png") repeat;
+}
+
+.section5 {
+  background: url("images/congruent_outline.png") #323232 repeat fixed;
+  padding: 100px 0px;
+}
+
+.box1 {
+  width: 350px;
+  margin-right: 100px;
+  float: right;
+  padding: 15px;
+  background-color: #ECF081;
+  color: #000;
+  font-size: 1.5em;
+}
+
+.box2 {
+  width: 1px;
+  display: table;
+  background: url("images/subtle_zebra_3d.png") #FFF repeat fixed;
+  padding: 30px;
+  margin-left: 100px;
+}
+
+.box3 {
+  margin-right: 100px;
+  padding: 30px;
+  width: 600px;
+  display:table;
+  background-color: #FFF;
+  float: right;
+}
+
+.image-note {
+  margin: 100px 50px;
+  float: right;
+  font-size: 3em;
+}
+
+.box4 {
+  margin: 40px 0px 40px 100px;
+  background-color: #FFF;
+  padding: 10px;
+}
+
+.box5 {
+  width: 800px;
+  background-color: #FFF;
+  padding: 30px;
+  margin-left: 100px;
+}
+
+.box5 table {
+  margin: 1em 0em;
+  font-size: 0.8em;
+  border: 1px solid black;
+}
+
+.box5 td {
+  border: 1px solid black;
+  padding-left: 3px;
+}
+
+.box5 th {
+  text-align: left;
+  color: #FFF;
+  background: #323232;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+h2 {
+  margin: 0em 0em;
+  font-size: 3em;
+}
+
+pre {
+  margin: 1em 1em 1em 1em;
+  font-size: 0.8em;
+}
