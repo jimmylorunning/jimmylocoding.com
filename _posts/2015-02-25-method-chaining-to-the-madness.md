@@ -16,14 +16,14 @@ I said I'd write a little bit about some of the challenges I encountered while w
 The purpose of the class is very simple. I want to add geocode data to the CSV, then write it to a file. So I write a method like `write_csv_with_geocode(file)` that joins the CSV with the geocode data and then writes it to a file. However, this violates the <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">single responsibility</a> per method principle. It does two things: adds the geocode data, then writes it to a file.
 
 {% highlight ruby %}
-  def write_csv_with_geocode(file)
-    merge_csv_with lat_lngs
-    CSV.open(file, 'wb') do |csv|
-      @csv.each do |row|
-        csv &lt;&lt; row
-      end
+def write_csv_with_geocode(file)
+  merge_csv_with lat_lngs
+  CSV.open(file, 'wb') do |csv|
+    @csv.each do |row|
+      csv &lt;&lt; row
     end
   end
+end
 {% endhighlight %}
 
 I could break the method out into two separate methods, but I know that in 99% of the use cases, the user will want to add_geocode then write. The two responsibilities are intimately related in this case. So the user would have to type two methods (three if you count the initializer) instead of one every time, like this:
@@ -49,18 +49,18 @@ CSVGeocoder.new('data.csv').add_geocode.write 'data_with_geocode.csv'
 Isn't it pretty? Here's the new code:
 
 {% highlight ruby %}
-  def add_geocode
-    @new_csv = merge_csv_with lat_lngs
-    self
-  end
+def add_geocode
+  @new_csv = merge_csv_with lat_lngs
+  self
+end
 
-  def write(file)
-    CSV.open(file, 'wb') do |csv|
-      @new_csv.each do |row|
-        csv &lt;&lt; row
-      end
+def write(file)
+  CSV.open(file, 'wb') do |csv|
+    @new_csv.each do |row|
+      csv &lt;&lt; row
     end
   end
+end
 {% endhighlight %}
 
 ### What do you think?
