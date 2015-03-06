@@ -9,4 +9,5 @@ I'm a web developer, writer, artist, biker, tennis player, and reader living in 
 - [goodreads](http://goodreads.com/jimmylorunning) book reviews and recommendations
 - [letters from hong kong](http://www.youtube.com/watch?v=AUmjc7j2y7Q) a short documentary I made about hong kong and my family
 - [i love you something](http://iloveyousomething.com) my personal blog, which needs updating
+- [free poems on demand](http://freepoemsatl.org) public performance art project where I write poems for strangers
 - [deviant art](http://jimmylorunning.deviantart.com/) my paintings, drawings, and other doodles
