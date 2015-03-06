@@ -18,7 +18,7 @@ Instead of working on a new custom app, we are given an existing app (the Typo b
 
 Our feature in a nutshell: add the ability to merge two articles into one. The body of the new article will be a concatenation of the two previous articles. The title and author will be from one of the two articles. And the comments of all previous articles (if any) will now be comments of this article. Only administrators can merge articles. All other users will not see the option at all.
 
-<a href="images/typo_merge_feature.png"><img src="images/typo_merge_feature-sm.png" alt="picture of what the typo merge feature should look like" /></a>
+<a href="{{ site.imageurl }}typo_merge_feature.png"><img src="{{ site.imageurl }}typo_merge_feature-sm.png" alt="picture of what the typo merge feature should look like" /></a>
 
 I spent a LONG time on this homework. Around 15 hours. The hardest part was writing the tests. That shouldn't be a surprise because writing the test is always the hardest part for me! I am still very new to Rspec and TestUnit syntax, and spend so long trying to figure out exactly how to phrase things. But I'm proud to say that I stuck to it this time and wrote all the tests before writing the actual code (except for the view and some skeleton methods so it didn't throw method-not-found errors--basically I had to get it to the point where the tests failed for the <em>right</em> reasons and not because it couldn't find some method).
 

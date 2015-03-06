@@ -13,4 +13,4 @@ I had an idea this morning while <a href="http://www.codenewbie.org/blogs/how-to
 
 So I went ahead and made it a reality. Introducing <a href="https://still-sands-5922.herokuapp.com/about.php">Exquisite Source</a>! Please have a look around and make your first pull request!
 
-<a href="https://still-sands-5922.herokuapp.com/about.php"><img src="images/ec_screenshot.jpg" alt="exquisite source screenshot" /></a>
+<a href="https://still-sands-5922.herokuapp.com/about.php"><img src="{{ site.imageurl }}ec_screenshot.jpg" alt="exquisite source screenshot" /></a>

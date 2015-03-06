@@ -13,6 +13,7 @@ description:      'jimmylocoding'
 url:              http://jimmylocoding.com
 shorturl:					jimmylocoding.com
 baseurl:          /
+imageurl:         '/images/'
 
 author:
   name:           'Jimmy Lo'

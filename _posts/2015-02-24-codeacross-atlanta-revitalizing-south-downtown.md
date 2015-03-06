@@ -17,7 +17,7 @@ Many of the participants of this event were not from this area. They see it as a
 
 But I wasn't completely against the enterprise. I agree that many things could be improved in this area. But I tried to steer our group into thinking about what those needs were based on what the locals wanted instead of what tourists would want. To improve the area, we must improve the lives of the people in the area, not bring new people in.
 
-<img src="images/southdowntown1.jpg" alt="South Downtown Atlanta" />
+<img src="{{ site.imageurl }}southdowntown1.jpg" alt="South Downtown Atlanta" />
 
 Perhaps this is all too political for a tech blog, so let me go back to describing the rest of the weekend's events.
 
@@ -35,7 +35,7 @@ After that, I started to think about where I could be most useful. Since Mollie
 
 Writing a script to do that wouldn't have taken long, but I thought this might be a tool that could be used in the future by Code For Atlanta or other similar groups faced with this same problem. So I worked on a Ruby program that could potentially be re-used in other projects. You can see the code for it <a href="https://github.com/codeforatlanta/csv_geocoder">on GitHub</a>, and I'll probably write a follow up post soon on a few interesting design challenges I ran into.
 
-<img src="images/southdowntown2.jpg" alt="Screenshot of South Downtown Asset Map" />
+<img src="{{ site.imageurl }}southdowntown2.jpg" alt="Screenshot of South Downtown Asset Map" />
 
 ### Day 2
 
