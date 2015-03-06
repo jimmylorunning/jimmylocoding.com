@@ -8,6 +8,7 @@ tags:
 - security
 - refactoring
 - TwitterFitter
+comments: true
 ---
 
 So I decided to revisit my <a href="http://jimmylocoding.com/week-3-round-up-twitter-fitter-the-tweet-generator/">week 3 app</a>, TwitterFitter. At the end of week 3, it was a simple app that generated tweets based on a Twitter handle. The tweets it generated would be in the style of the Twitter account you gave it. It does this by chaining together words that often appear together. But there were a lot of things lacking in the app, so this week I revisited it and made it much better!

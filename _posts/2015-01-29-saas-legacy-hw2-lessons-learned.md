@@ -9,6 +9,7 @@ tags:
 - tdd
 - testing
 - Typo
+comments: true
 ---
 
 This week's <a href="https://www.edx.org/course/engineering-software-service-part-2-uc-berkeleyx-cs169-2x">SaaS homework</a> has been the most elaborate so far. As the instructors explain in the lectures, after teaching the class for a while, they asked some of the top software companies what one thing they wish graduates of computer science programs would learn before entering the workforce. The overwhelming answer was "how to work with legacy code". So even though at first they had no idea how to teach this, they set out to do so in this class. And thus we have legacy homework 1 and 2 (last week and this week).

@@ -10,6 +10,7 @@ tags:
 - rails
 - yml
 - security
+comments: true
 ---
 
 ### Problem: I don't want to expose API secret keys, but I still want to be able to commit my changes and push to github.

@@ -3,6 +3,7 @@ layout: post
 title: "Weekend in Review: GoodieHack"
 tags:
 - hackathon
+comments: true
 ---
 
 This weekend I went to GoodieHack, which was only my second hackathon ever (or first official one with a competitive element). Here's a description according to [their website](http://goodiehack.com/):

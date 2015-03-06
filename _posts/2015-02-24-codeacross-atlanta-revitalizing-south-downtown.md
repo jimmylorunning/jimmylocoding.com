@@ -6,6 +6,7 @@ tags:
 - hackathons
 - CodeForAtlanta
 - civic hacking
+comments: true
 ---
 
 This past weekend, I attended my first hackathon-like event (there was no competitive element, so it's not a hackathon, technically speaking). Organized by <a href="http://www.codeforatlanta.org/">Code For Atlanta</a> and hosted by the <a href="http://www.civicatlanta.org/">Center for Civic Innovation</a> as part of an international <a href="http://www.codeforamerica.org/events/codeacross-2015/">CodeAcross event</a>, we met in South Downtown Atlanta to tackle the problems there, namely, how to revitalize the neighborhood.

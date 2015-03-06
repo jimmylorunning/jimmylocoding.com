@@ -5,6 +5,7 @@ tags:
 - goals
 - learning
 - planning
+comments: true
 ---
 
 One of the hardest things about self-guided learning is coming up with a disciplined curriculum of some sort. School is good for giving you some kind of structure in which to learn, but when you're learning on your own, you can go in any direction, which can be good and bad. When you don't know a lot, you may not even know what is worth learning and what isn't. It's really easy to end up learning "spastically" -- by which I mean, I'll learn a little bit of this until I see something shiny over here and then I'll learn that before I finish learning this, etc. Meanwhile maybe there's something else that is super important to what your end-goal is, but since you didn't read the right blog posts, you never even find out about it... the proverbial "things you don't know that you don't know."

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Overwhelmed!"
+comments: true
 ---
 
 I didn't finish my app this week! I tried to do too much. But here's what I did finish:

@@ -7,6 +7,7 @@ tags:
 - teaching
 - words
 - mentoring
+comments: true
 ---
 
 I had a whoops! moment the other day. A friend and I were working on a Python program together, and at one point she was asking me how I would do something. And without thinking, I said "Well, we could just pass this variable in," or "Just put this inside of the loop". And after a while, she said "Stop saying JUST! You make it sound like it's supposed to be easy."

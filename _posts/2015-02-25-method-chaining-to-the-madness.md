@@ -7,6 +7,7 @@ tags:
 - object oriented design
 - ruby
 - SRP
+comments: true
 ---
 
 I said I'd write a little bit about some of the challenges I encountered while writing the <a href="https://github.com/codeforatlanta/csv_geocoder">CSV Geocoder</a> utility. So here's a small problem and solution:

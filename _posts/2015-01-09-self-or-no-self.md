@@ -8,6 +8,7 @@ tags:
 - public methods
 - ruby
 - self
+comments: true
 ---
 
 

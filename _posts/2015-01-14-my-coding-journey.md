@@ -7,6 +7,7 @@ tags:
 - newbies
 - poetry
 - story
+comments: true
 ---
 
 I've been hanging out at the <a href="http://codenewbie.org">Code Newbie</a> website a lot lately, talking in the forums as well as listening to the excellent <a href="http://www.codenewbie.org/podcast">podcasts</a> hosted by <a href="http://bloggytoons.com/">Saron Yitbarek</a>. She interviews programmers not only about the technical nitty gritty, but also about the more human side of software development. One of these topics is: how do people get started in software development? What was your first app? What was something you wish you knew before you got into programming?

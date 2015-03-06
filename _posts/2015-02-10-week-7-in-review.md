@@ -12,6 +12,7 @@ tags:
 - Rails API
 - resume
 - SaaS
+comments: true
 ---
 
 Didn't get anything (app-wise) presentable to the world out this week. However, I did finish off a bunch of loose-ends at my freelance jobs and such, so I'm feeling pretty good about that. Just a quick round-up. I'll have a longer blog post about other topics soon.

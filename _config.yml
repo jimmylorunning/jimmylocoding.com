@@ -10,17 +10,21 @@ relative_permalinks: true
 title:            jlc
 tagline:          'jimmylocoding'
 description:      'jimmylocoding'
-url:              http://jimmylorunning.github.io/blog
+url:              http://jimmylocoding.com
+shorturl:					jimmylocoding.com
 baseurl:          /
 
 author:
   name:           'Jimmy Lo'
-  url:            http://jimmylocoding.com
+  url:            http://jimmylorunning.com
 
 paginate:         5
 
 # Custom vars
 version:          2.1.0
 
+disqusid:         'jimmylocoding'
+
 social:
   github:         https://github.com/jimmylorunning
+  twitter:        http://twitter.com/jimmylocoding

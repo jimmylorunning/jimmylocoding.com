@@ -16,6 +16,7 @@ tags:
 - Typo
 - validation
 - XML
+comments: true
 ---
 
 This week, I started my <a href="https://www.edx.org/course/engineering-software-service-part-2-uc-berkeleyx-cs169-2x">SaaS Part 2</a> class... I decided to just do the SaaS homework in place of my weekly app. The homework involves the <a href="http://oracleofbacon.org/">Oracle of Bacon</a> website, where you can find the <a href="http://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon">Bacon Number</a> of any actor. It also shows you the linkages along the way... for instance:

@@ -9,6 +9,7 @@ tags:
 - plugin
 - pull requests
 - SaaS
+comments: true
 ---
 
 Last week was all about being overwhelmed. This week was all about the unexpected.

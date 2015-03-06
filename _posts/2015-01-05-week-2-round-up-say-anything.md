@@ -10,6 +10,7 @@ tags:
 - rails
 - ruby
 - testing
+comments: true
 ---
 
 Week 2 of An App Per Week is over! It was tough and I got a little behind. I planned to implement the <a href="http://docs.railsbridge.org/intermediate-rails/">RailsBridge intermediate curriculum</a>, plus testing and some extra features. Here is what I was able to accomplish:
