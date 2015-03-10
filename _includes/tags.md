@@ -1,3 +1,4 @@
+{% if page.tags.size > 0 %}
 <div class="tags">
   <h2>Tags</h2>
   <ul>
@@ -6,3 +7,4 @@
     {% endfor %}
   </ul>
 </div>
+{% endif %}
