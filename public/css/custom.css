@@ -26,3 +26,7 @@
 	display: inline-block;
 	margin-right: 0.7em;
 }
+
+.post-comments-link {
+	display: block;
+}

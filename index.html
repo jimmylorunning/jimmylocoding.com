@@ -16,6 +16,10 @@ title: Home
       <span class="post-date">{{ post.date | date_to_string }}</span>
 
       {{ post.content }}
+
+      {% if post.comments %}
+      <span class="post-comments-link"><a href="{{ post.url }}#comments"><i class="fa fa-comments"></i> What do you think?</a></span>
+      {% endif %}
     </div>
     {% endif %}
   {% endfor %}
