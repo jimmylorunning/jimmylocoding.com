@@ -30,3 +30,16 @@
 .post-comments-link {
 	display: block;
 }
+
+.related {
+	padding-top: 1rem;
+	border-top: none;
+}
+
+.post-metadata {
+	border-top: 1px solid #eee;
+}
+
+.comments {
+	padding-top: 0rem;
+}
