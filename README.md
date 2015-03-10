@@ -1,6 +1,4 @@
-# jimmylorunning
-
-Future home of jimmylocoding.com (my coding blog that's currently on WordPress).
+# jimmylocoding.com
 
 Built using:
 
