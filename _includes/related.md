@@ -1,29 +1,14 @@
 <div class="related">
-{% assign hasSimilar = '' %}
+{% assign hasRelated = false %}
 {% for post in site.related_posts %}
-  {% assign postHasSimilar = false %}
-  {% for tag in post.tags %}
-    {% for thisTag in page.tags %}
-      {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
-        {% if hasSimilar.size == 0 %}
-        <h2>Similar Posts</h2>
-        <ul class="related-posts">
-        {% endif %}
-        <li>
-          <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
-          {% if post.series %}
-            (Series: {{ post.series }})
-          {% endif %}
-          <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </li>
-        {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
-        {% assign postHasSimilar = true %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
+  {% if hasRelated == false %}
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+  {% endif %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+    <small>{{ post.date | date_to_string }}</small></li>
+  {% assign hasRelated = true %}
 {% endfor %}
-{% if hasSimilar.size > 0 %}
-  </ul>
+{% if hasRelated == true %}
+</ul>
 {% endif %}
-</div>
