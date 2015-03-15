@@ -11,7 +11,7 @@ tags:
 comments: true
 ---
 
-So I decided to revisit my <a href="http://jimmylocoding.com/week-3-round-up-twitter-fitter-the-tweet-generator/">week 3 app</a>, TwitterFitter. At the end of week 3, it was a simple app that generated tweets based on a Twitter handle. The tweets it generated would be in the style of the Twitter account you gave it. It does this by chaining together words that often appear together. But there were a lot of things lacking in the app, so this week I revisited it and made it much better!
+So I decided to revisit my <a href="http://jimmylocoding.com/2015/01/12/week-3-round-up-twitter-fitter/">week 3 app</a>, TwitterFitter. At the end of week 3, it was a simple app that generated tweets based on a Twitter handle. The tweets it generated would be in the style of the Twitter account you gave it. It does this by chaining together words that often appear together. But there were a lot of things lacking in the app, so this week I revisited it and made it much better!
 
 <a href="https://secret-brushlands-4139.herokuapp.com/">Version 2.0 of Twitter Fitter</a> has a new design (it was just a white page before), and you can now enter TWO twitter handles and the app will generate tweets based on BOTH feeds combined. Also, you can now tweet the results (it tweets from the @FitterTweets account).
 

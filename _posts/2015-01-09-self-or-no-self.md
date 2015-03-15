@@ -41,7 +41,7 @@ private_method = 42 # violates rule A - error
 self.private_method = 42 # violates rule B - but works!
 {% endhighlight %}
 
-Apparently in this case, the second line is the one that's allowed. <a href="ttp://devblog.orgsync.com/2013/05/20/private-and-protected-they-might-not-mean-what-you-think-they-mean/">This blog post</a> explains it very clearly:
+Apparently in this case, the second line is the one that's allowed. <a href="http://devblog.orgsync.com/2013/05/20/private-and-protected-they-might-not-mean-what-you-think-they-mean/">This blog post</a> explains it very clearly:
 <blockquote>When using a setter in Ruby we're supposed to use an explicit receiver like `self`. Here we have a private method that doesn't allow an explicit receiver. We appear to have reached an impasse. <strong>In this case it turns out Ruby breaks its own rule.</strong></blockquote>
 Before I found this, I was trying to get around the impasse by doing jenky things like this:
 
