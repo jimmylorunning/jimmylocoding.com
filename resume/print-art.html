@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jimmy (Hiu Nam) Lo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+      .clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
+body {
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333333;
+}
+.main {
+  padding: 5px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px;
+}
+.card-nested {
+  min-height: 0;
+  margin-bottom: 10px;
+  border-width: 1px 0 0 0;
+}
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
+}
+.card-nested:after {
+  clear: both;
+}
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
+}
+.text-bolder {
+  font-weight: bold;
+}
+.background-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+/*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+.floating-nav-trigger {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  background-color: white;
+  font-size: 1.5em;
+  color: #357ebd;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.floating-nav-trigger .close-icon {
+  display: none;
+}
+.floating-nav-trigger:hover {
+  color: #1f496e;
+  background-color: #e6e6e6;
+  text-decoration: none;
+}
+.floating-nav-trigger.is-open {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.floating-nav-trigger.is-open .close-icon {
+  display: inherit;
+}
+.floating-nav-trigger.is-open .fa-bars {
+  display: none;
+}
+.floating-nav-trigger.is-open:hover {
+  background-color: white;
+}
+.floating-nav {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+  -o-transition: transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 50;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  visibility: hidden;
+  overflow: hidden;
+}
+.floating-nav ul {
+  font-size: 1.2em;
+  margin: 0;
+}
+.floating-nav ul li {
+  border-bottom: 1px solid #eff2f6;
+}
+.floating-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #357ebd;
+  display: block;
+}
+.floating-nav ul li a:hover {
+  color: #1f496e;
+}
+.floating-nav ul li i.fa {
+  margin-right: 10px;
+}
+.floating-nav ul li:last-child {
+  border-bottom: 0;
+}
+.floating-nav.is-visible {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s, visibility 0s 0s;
+  -o-transition: transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
+  }
+}
+.profile-pic {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .profile-pic {
+    padding: 10px 0;
+  }
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+  }
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+@media (max-width: 992px) {
+  .contact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .contact-details .detail .icon,
+  .contact-details .detail .info {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .contact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.link-skype {
+  color: #12a5f4;
+}
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.link-stackoverflow {
+  color: #8e8e92;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: #000000;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 33%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+}
+
+    </style>
+  </head>
+
+  <body itemscope itemtype="http://schema.org/Person">
+    <script>
+      window.onload = function () {
+        var toggleFloatingMenu = function() {
+          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+        };
+
+        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+        $( ".js-tooltip" ).tooltip();
+        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+          e.preventDefault();
+          toggleFloatingMenu();
+        });
+        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+      }
+    </script>
+    <div class="container-fluid">
+      <div class="row main clearfix">
+        <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+          <i class="fa fa-bars"></i>
+          <span class="close-icon">&times;</span>
+        </a>
+        <nav class="floating-nav js-floating-nav">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#about">
+                <i class="fa fa-user"></i>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#work-experience">
+                <i class="fa fa-coffee"></i>
+                Work Experience
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <i class="fa fa-code"></i>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#education">
+                <i class="fa fa-mortar-board"></i>
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#teaching">
+                <i class="fa fa-key"></i>
+                Teaching
+              </a>
+            </li>
+            <li>
+              <a href="#volunteer-work">
+                <i class="fa fa-leaf"></i>
+                Volunteer Work
+              </a>
+            </li>
+            <li>
+              <a href="#publications">
+                <i class="fa fa-book"></i>
+                Publications
+              </a>
+            </li>
+            <li>
+              <a href="#awards">
+                <i class="fa fa-trophy"></i>
+                Awards
+              </a>
+            </li>
+            <li>
+              <a href="#interests">
+                <i class="fa fa-heart"></i>
+                Interests
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+          <div class="card profile-card">
+              <span class="profile-pic-container">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Jimmy (Hiu Nam) Lo" src="http://jimmylocoding.com/images/ASA_sm.jpg" itemprop="image">
+                </div>
+
+                <div class="name-and-profession">
+                  <h3 class="text-center text-bolder name" itemprop="name"> Jimmy (Hiu Nam) Lo</h3>
+                  <h5 class="text-muted text-center" itemprop="jobTitle">Programmer / Artist</h5>
+                </div>
+              </span>
+              <hr>
+
+              <div class="contact-details clearfix">
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-location-arrow"></i>
+                    </span>
+
+                      <span class="info">
+                        Atlanta, Georgia
+
+                      </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-phone"></i>
+                    </span>
+
+                    <span class="info" itemprop="telephone">
+                      (678) 404-2556
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-envelope"></i>
+                    </span>
+
+                    <span class="info">
+                      <a href="/cdn-cgi/l/email-protection#117b787c7c687d7e63647f7f787f7651767c70787d3f727e7c" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="254f4c48485c494a57504b4b4c4b42654248444c490b464a48">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a>
+                    </span>
+                  </div>
+<!--
+                  <div class="detail">
+                    <span class="icon" title="Languages I speak">
+                      <i class="fa fa-lg fa-language"></i>
+                    </span>
+
+                    <span class="info">
+                      English, Cantonese
+                    </span>
+                  </div> -->
+              </div>
+
+              <hr>
+
+              <div class="contact-details clearfix">
+                  <div class="detail">
+                    <span class="icon" title="GitHub">
+                      <a href="//github.com/jimmylorunning" target="_blank">
+                        <i class="fa fa-lg fa-github"></i>
+                      </a>
+                    </span>
+
+                    <span class="info" itemprop="GitHub">
+                      github.com/jimmylorunning
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon" title="GitHub">
+                      <a href="//twitter.com/jimmylocoding" target="_blank">
+                        <i class="fa fa-lg fa-twitter"></i>
+                      </a>
+                    </span>
+
+                    <span class="info" itemprop="Twitter">
+                      @jimmylocoding
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon" title="Blog">
+                      <a href="//jimmylocoding.com/" target="_blank">
+                        <i class="fa fa-lg fa-rss"></i>
+                      </a>
+                    </span>
+
+                    <span class="info" itemprop="GitHub">
+                      jimmylocoding.com
+                    </span>
+                  </div>
+
+
+              </div>
+          </div>
+        </section>
+
+        <section class="col-md-9 card-wrapper pull-right">
+          <div class="card background-card">
+            <!--
+            <h4 class="text-uppercase text-bolder">Background</h4>
+            <hr>
+            -->
+
+            <div class="background-details">
+              <div class="detail" id="about">
+                <div class="icon">
+                  <i class="fa fa-lg fa-user"></i>
+                  <span class="mobile-title">About</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    About
+                  </h4>
+
+                  <div class="content" itemprop="description">
+                  Coming from both tech and art backgrounds, I am a multi-disciplinary artist and engineer. I created Free Poems on Demand as a longstanding pop-up art collective, performing at over 60 events. As a software engineer, I designed and ran the DeKalb Library's website for 7 years. I wish to find new ways of growing as an artist while contributing to this rich and historic city.
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="work-experience">
+                <div class="icon">
+                  <i class="fa fa-lg fa-coffee"></i>
+                  <span class="mobile-title">Work Experience</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Work Experience
+                  </h4>
+
+                  <ul class="list-unstyled">
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Freelancer</strong>
+
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Mar, 2014 -
+                                  Present
+                              </span>
+
+                                <span>
+                                  <!--<i class="fa fa-clock-o icon-left"></i>
+                                  11 months -->
+                                </span>
+                            </small>
+                          </p>
+                          <p>Performed work for diverse clients.</p>
+                            <ul>
+                                <li> Redesigned and built out a new version of the DeKalb County Public Library site </li>
+                                <li> Developed a responsive HTML5 site for Encyclomedia (in progress) </li>
+                                <li> Shot and edited videos for Wages Films </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Mar, 2014
+                            </p>
+
+                            <p>
+                                <span class="label label-success">
+                                  Currently Working
+                                </span>
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              11 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>eBranch Manager</strong>,&nbsp;
+                              <a href="http://dekalblibrary.org"  target="_blank">DeKalb County Public Library</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Jan, 2007 -
+                                  Mar, 2014
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  7 years 2 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Moved the library from a 90&#x27;s style static page to a fully interactive online presence.</p>
+                            <ul>
+                                <li> Redesigned and built the library&#x27;s website, making information responsive, accessible, and editable </li>
+                                <li> Created an app for librarians to enter programs for publication on the website&#x27;s events calendar </li>
+                                <li> Created an app that fed library information to TV screens that greet patrons when they enter the library </li>
+                                <li> Built a complete intranet solution to facilitate communication within the organization </li>
+                                <li> Started and created content for DCPLive (blog) and DCPLink (newsletter) </li>
+                                <li> Created the library&#x27;s online presence to facilitate patron interactions on Twitter, Facebook, Flickr, Pinterest, and YouTube </li>
+                                <li> Grew online following on social media services, including 1400 followers on Twitter and 3700 Likes on Facebook </li>
+                                <li> Created and maintained three podcasts delivering original audio content to patrons </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Jan, 2007
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Mar, 2014
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              7 years 2 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Lead Web Programmer</strong>,&nbsp;
+                              <a href="http://www.anchorwave.com/"  target="_blank">Anchor Wave Internet Solutions</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Jul, 2005 -
+                                  Jul, 2006
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  1 year
+                                </span>
+                            </small>
+                          </p>
+                          <p>Key member of a web development team making sites for local small businesses in Tucson, Arizona.</p>
+                            <ul>
+                                <li> Created PHP and MySQL driven e-commerce sites under strict deadlines </li>
+                                <li> Helped develop and conceive a PHP-based content management system for use across client sites </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Jul, 2005
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Jul, 2006
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              1 year
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>New Media Specialist</strong>,&nbsp;
+                              <a href="http://www.wagesdesign.com/"  target="_blank">Wages Design</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Mar, 2001 -
+                                  Jun, 2003
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 years 3 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Worked closely with a team of graphic designers to deliver beautiful, effective websites for clients.</p>
+                            <ul>
+                                <li> Implemented large-scale, interactive, and dynamic websites using HTML, Flash, Actionscript, and ASP </li>
+                                <li> Created smooth user experiences from visual designs </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Mar, 2001
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Jun, 2003
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              2 years 3 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Co-op Software Developer</strong>,&nbsp;
+                              Lotus Development
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Aug, 1996 -
+                                  Apr, 1999
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 years 8 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Assisted in the development of Word Pro, a word processing application for the desktop.</p>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Aug, 1996
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Apr, 1999
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              2 years 8 months
+                            </p>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="detail" id="skills">
+                <div class="icon">
+                  <i class="fa fa-lg fa-code"></i>
+                  <span class="mobile-title">Skills</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Skills
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>The Arts</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Poetry</span>
+                                <span class="label label-keyword">Performance Art</span>
+                                <span class="label label-keyword">Essays</span>
+                                <span class="label label-keyword">Fiction</span>
+                                <span class="label label-keyword">Editing</span>
+                                <span class="label label-keyword">Watercolor</span>
+                                <span class="label label-keyword">Film</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Backend Web Development</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">PHP</span>
+                                <span class="label label-keyword">MySQL</span>
+                                <span class="label label-keyword">Ruby</span>
+                                <span class="label label-keyword">Ruby on Rails</span>
+                                <span class="label label-keyword">ExpressionEngine</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Frontend Web Development</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">HTML</span>
+                                <span class="label label-keyword">CSS</span>
+                                <span class="label label-keyword">Javascript</span>
+                                <span class="label label-keyword">JQuery</span>
+                                <span class="label label-keyword">Sass</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Intermediate" data-placement="left">
+                              <div class="skill-progress intermediate">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Web Design</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Photoshop</span>
+                                <span class="label label-keyword">Illustrator</span>
+                                <span class="label label-keyword">User Interface (UI) Design</span>
+                                <span class="label label-keyword">User Experience (UX)</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Intermediate" data-placement="left">
+                              <div class="skill-progress intermediate">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Server Platforms</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Linux</span>
+                                <span class="label label-keyword">Windows Server</span>
+                                <span class="label label-keyword">Mac OS X</span>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+                <div class="detail" id="publications">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-book"></i>
+                    <span class="mobile-title">Publications</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Publications
+                    </h4>
+
+                    <div class="content">
+                     <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>
+                                    <a href="http://littleredleaves.com/LRL7/"  target="_blank">Little Red Leaves, issue 7</a>
+                                </strong>,&nbsp;
+                                Guest Editor 
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  August, 2013
+                                </small>
+                              </p>
+                              <p class="clear-margin">Curated, designed, and published an online issue of literary works.<p>
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-sm hidden-xs">
+                              <p>
+                                August, 2013 
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>
+                                    <a href="http://www.textileseries.com/shop/a-reduction-by-jimmy-lo"  target="_blank">A Reduction</a>
+                                </strong>,&nbsp;
+                                Textile Series
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  June, 2011
+                                </small>
+                              </p>
+                              <p class="clear-margin">Prose poem on the seduction of the miniscule</p>
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-sm hidden-xs">
+                              <p>
+                                June, 2011
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>
+                                    <a href="http://eyeshot.net/perec.html"  target="_blank">An Attempt at Re-exhausting a Place in Paris</a>
+                                </strong>,&nbsp;
+                                Eyeshot
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Aug, 2012
+                                </small>
+                              </p>
+                              <p class="clear-margin">Followed Oulipian writer Georges Perec through time and space using Google Maps</p>
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-sm hidden-xs">
+                              <p>
+                                Aug, 2012
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>
+                                    <a href="http://littleredleaves.com/LRL5/Jimmy_Lo.html"  target="_blank">Tiny Stories About Sons</a>
+                                </strong>,&nbsp;
+                                Little Red Leaves, issue 5 
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Nov, 2010
+                                </small>
+                              </p>
+                              <p>Long poem</p>
+<!--                              <p class="clear-margin"></p> -->
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-sm hidden-xs">
+                              <p>
+                                Nov, 2010
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>
+                                    <a href="http://www.jubilat.org/jubilat/archive/vol14/poem_10/"  target="_blank">Two Poems</a>
+                                </strong>,&nbsp;
+                                Jubilat, issue 14
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  2007
+                                </small>
+                              </p>
+                              <!--<p class="clear-margin"></p>-->
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-sm hidden-xs">
+                              <p>
+                                2007
+                              </p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail" id="volunteer-work">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-picture-o"></i>
+                    <span class="mobile-title">Art Installations and Projects</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                     Art Installations and Projects 
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>Founder, Poet</strong>,&nbsp;
+                                  <a href="http://freepoemsatl.org"  target="_blank">Free Poems on Demand</a>
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Sep, 2010 -
+                                    Present
+                                </small>
+                              </p>
+                              <p>Freely spread literary love</p>
+                              <ul>
+                                  <li> Conceived and organized over 60 Free Poems on Demand performances </li>
+                                  <li> Worked in close collaboration with organizers of events, such as the Decatur Book Festival, Chomp and Stomp, and Atlanta Streets Alive </li>
+                                  <li> Recruited over 20 members to write free poems </li>
+                                  <li> Created and managed the Free Poems on Demand website and online presence </li>
+                                  <li> Increased awareness of poetry in Atlanta </li>
+                              </ul>
+                            </div>
+                            <div class="sidebar hidden-xs hidden-sm text-muted text-center">
+                              <p>
+                                <strong>Since:</strong>&nbsp;
+                                Sep, 2010
+                              </p>
+                              <p>
+                                  <span class="label label-success">
+                                    Currently Active 
+                                  </span>
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>Contributing Poet</strong>,&nbsp;
+                                  <a href="http://freepoemsatl.org"  target="_blank">Passage</a>
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Sep, 2011
+                                </small>
+                              </p>
+                              <p>Public art project in the new South Mountain Community Library in South Pheonix, Arizona. As part of the Acoustic Chairs element of the permanent installation, a recording of my poem "Untitled" is played to visitors when they sit in the chair and activate the sensors. </p>
+                            </div>
+                            <div class="sidebar hidden-xs hidden-sm text-muted text-center">
+                              <p>
+                                Sep, 2011
+                              </p>
+                              <p>
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+              <div class="detail" id="education">
+                <div class="icon">
+                  <i class="fa fa-lg fa-mortar-board"></i>
+                  <span class="mobile-title">Education</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Education
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>Software as a Service, <a href="https://www.edx.org/course/engineering-software-service-uc-berkeleyx-cs169-1x">Parts 1</a> &amp; <a href="https://www.edx.org/course/engineering-software-service-part-2-uc-berkeleyx-cs169-2x">2</a></strong>,&nbsp;
+                              EdX.org / UC Berkeley
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                Nov, 2014 -
+                                  Feb, 2015
+                              </small>
+                            </p>
+                            <i>Final grade: 97%</i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Started:</strong>&nbsp;
+                              Oct, 2014
+                            </p>
+                            <p>
+                                <strong>Completion:</strong>&nbsp;
+                                Jan, 2015
+                            </p>
+                          </div>
+                        </li>
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>Creative Writing, MFA</strong>,&nbsp;
+                              Arizona State University
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                Jul, 2003 -
+                                  Dec, 2004
+                              </small>
+                            </p>
+                            <i>Poetry</i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Started:</strong>&nbsp;
+                              Jul, 2003
+                            </p>
+                            <p>
+                                <strong>Completion:</strong>&nbsp;
+                                Dec, 2004
+                            </p>
+                          </div>
+                        </li>
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>Computer Science, Bachelor</strong>,&nbsp;
+                              Georgia Institute of Technology
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                Dec, 1995 -
+                                  Nov, 2000
+                              </small>
+                            </p>
+                            <i>3.37 GPA</i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Started:</strong>&nbsp;
+                              Dec, 1995
+                            </p>
+                            <p>
+                                <strong>Completion:</strong>&nbsp;
+                                Nov, 2000
+                            </p>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="teaching">
+                <div class="icon">
+                  <i class="fa fa-lg fa-key"></i>
+                  <span class="mobile-title">Teaching</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Teaching
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>"Intro to Podcasting"</strong>, DeKalb County Public Library
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                  Jan, 2015
+                              </small>
+                            </p>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              Jan, 2015
+                            </p>
+                          </div>
+                        </li>
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>GED Test Preparation</strong>,&nbsp;
+                              DeKalb County Jail
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                2011 -
+                                  2013
+                              </small>
+                            </p>
+                            <i></i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              2011 - 2013
+                            </p>
+                          </div>
+                        </li>
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>"Organizing, Writing, Maintaining, and Promoting A Library Blog"</strong>
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                Aug, 2008
+                              </small>
+                            </p>
+                            <i>GOLD/GALILEO conference</i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              Aug, 2008
+                            </p>
+                          </div>
+                        </li>
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>Graduate Teaching Assistant</strong>, English Composition
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                2003 - 2004
+                              </small>
+                            </p>
+                            <i>Arizona State University</i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              2003 - 2004
+                            </p>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+                <div class="detail" id="volunteer-work">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-leaf"></i>
+                    <span class="mobile-title">Volunteer Work</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Volunteer Work
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                           <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>Hacker</strong>,&nbsp;
+                                  <a href="http://goodiehack.com"  target="_blank">GoodieHack 2015</a>
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Feb, 2015
+                                </small>
+                              </p>
+                              <p>Created data visualization dashboard for Atlanta Regional Commission</p>
+                            </div>
+                            <div class="sidebar hidden-xs hidden-sm text-muted text-center">
+                              <p>
+                                Feb, 2015
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>Hacker</strong>,&nbsp;
+                                  <a href="http://www.codeforamerica.org/events/codeacross-2015/"  target="_blank">CodeAcross Atlanta</a>
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Feb, 2015 -
+                                    Present
+                                </small>
+                              </p>
+                              <p>Ongoing efforts to revitalize South Downtown Atlanta through tech</p>
+                              <ul>
+                                  <li> Converted data for use in asset map of area </li>
+                                  <li> Helped build interactive asset map of South Downtown </li>
+                              </ul>
+                            </div>
+                            <div class="sidebar hidden-xs hidden-sm text-muted text-center">
+                              <p>
+                                <strong>Since:</strong>&nbsp;
+                                Feb, 2015
+                              </p>
+                              <p>
+                                  <span class="label label-success">
+                                    Currently Volunteering
+                                  </span>
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>Volunteer</strong>,&nbsp;
+                                  <a href="http://www.cropmobgeorgia.com/category/crop-mob-atlanta/"  target="_blank">Crop Mob</a>
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  2010 -
+                                    2012
+                                </small>
+                              </p>
+                              <p>Helped local organic farmers weed, plant, harvest, and do other tasks</p>
+                              <ul>
+                              </ul>
+                            </div>
+                            <div class="sidebar hidden-xs hidden-sm text-muted text-center">
+                              <p>
+                                <strong>Since:</strong>&nbsp;
+                                2010
+                              </p>
+                              <p>
+                                  <strong>Until:</strong>&nbsp;
+                                  2012
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>Volunteer, Pick leader</strong>,&nbsp;
+                                  <a href="http://www.concrete-jungle.org/"  target="_blank">Concrete Jungle</a>
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  2012 -
+                                    Present
+                                </small>
+                              </p>
+                              <p>Helped pick over a thousand pounds of wild fruit per year for local food banks</p>
+                              <ul>
+                              </ul>
+                            </div>
+                            <div class="sidebar hidden-xs hidden-sm text-muted text-center">
+                              <p>
+                                <strong>Since:</strong>&nbsp;
+                                2012
+                              </p>
+                              <p>
+                                  <span class="label label-success">
+                                    Currently Volunteering
+                                  </span>
+                              </p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="detail" id="awards">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-trophy"></i>
+                    <span class="mobile-title">Awards</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Awards
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm" itemprop="award">
+                                <strong>Employee of the Quarter</strong>,&nbsp;
+                                DeKalb County Public Library
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Awarded on: Aug 31, 2008
+                                </small>
+                              </p>
+                              <p class="clear-margin">  </p>
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                              <p>
+                                <strong>Awarded on:</strong>&nbsp;
+                                Aug 31, 2008
+                              </p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+  <script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>
