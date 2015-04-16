@@ -35,13 +35,6 @@ A Goodreads clone in Rails. Currently working on this.
 
   * [GitHub](https://github.com/jimmylorunning/minigr)
 
-### Community Insights
-
-A dashboard created with a team of other designers, engineers, and creators for the Atlanta Regional Commission during GoodieHack 2015. 
-
-  * [GitHub](https://github.com/jimmylorunning/arc-dashboard)
-  * [Demo of MVP](https://still-eyrie-9092.herokuapp.com/)
-
 ### CSV Geocoder
 
 A little tool written in Ruby that will put Geocode data into any CSV file based on the address column. Created as part of the CodeAcross Atlanta Hack event.
@@ -49,3 +42,17 @@ A little tool written in Ruby that will put Geocode data into any CSV file based
   * [GitHub](https://github.com/codeforatlanta/csv_geocoder)
   * [My post on CodeAcross Atlanta](/2015/02/24/codeacross-atlanta-revitalizing-south-downtown/)
   * [My post on method chaining](/2015/02/25/method-chaining-to-the-madness/)
+
+### Poetic Forms Cheatsheet
+
+A cheatsheet for writing poetry in form!
+
+  * [GitHub](https://github.com/jimmylorunning/poetic_forms_cheatsheet)
+
+### Community Insights
+
+A dashboard created with a team of other designers, engineers, and creators for the Atlanta Regional Commission during GoodieHack 2015. 
+
+  * [GitHub](https://github.com/jimmylorunning/arc-dashboard)
+  * [Demo of MVP](https://still-eyrie-9092.herokuapp.com/)
+
