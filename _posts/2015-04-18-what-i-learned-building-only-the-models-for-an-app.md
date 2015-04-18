@@ -7,6 +7,7 @@ tags:
 - shoulda
 - polymorphic associations
 - single table inheritance
+- minigr
 permalink: what-i-learned-building-models
 comments: true
 ---

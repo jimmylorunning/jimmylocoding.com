@@ -34,6 +34,7 @@ Combine any 2 Twitter feeds with this app! Create surprising and fun phrases! Gi
 A Goodreads clone in Rails. Currently working on this.
 
   * [GitHub](https://github.com/jimmylorunning/minigr)
+  * [Blog post about building out the models](/what-i-learned-building-models/)
 
 ### CSV Geocoder
 
